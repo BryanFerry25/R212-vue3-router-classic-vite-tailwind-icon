@@ -5,9 +5,14 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: { indigo: { '25': '#f6f8ff' } },
-
-      fontFamily: { inter: 'Inter' },
+      colors: {
+        indigo: {
+          '25': '#f6f8ff',
+        }
+      },
+      fontFamily: {
+        inter: 'Inter',
+      },
     },
   },
   plugins: [],
