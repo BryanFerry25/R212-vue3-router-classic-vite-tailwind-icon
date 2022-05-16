@@ -2,26 +2,40 @@
 import card from "../components/Card.vue"
 import header1 from "../components/Header.vue"
 import footer1 from "../components/Footer.vue"
-import flechebas from "../components/icones/Flechebas.vue"
+import flechedown from "../components/icones/Flechedown.vue"
+import loupe from "../components/icones/loupe.vue"
+
 
 export default {
     name:"App",
-    components: { card, header1, footer1, flechebas },
+    components: { card, header1, footer1, flechedown, loupe },
 }
 </script>
 
 <template class="bg-indigo-25">
     <header1 />
-    <div class="text-center mt-14">
-        <h1 class="text-4xl leading-10 font-bold">Search properties to rent</h1>
+    <div class="bg-indigo-25">
+
+
+
+<div class="lg:flex lg:justify-between">
+      <h1 class="m-4 mt-14 text-4xl font-bold text-center">Search properties to rent</h1>
+
+      <div class="mt-14 mx-6 px-2 py-1 border-2 border-indigo-100 rounded-lg flex justify-between bg-white lg:flex-1 py-1 ml-32">
+          <p class="text-gray-900 font-medium text-left lg:">Search with Search Bar</p>
+
+          <flechedown class="p-1 my-1 bg-indigo-100 rounded-xl lg:p-2 "/>
+      </div>
     </div>
 
-    <div class="flex text-center">
-      <p class="space-x-24 text-center">
-        Search with Search Bar
-      </p>
-      <flechebas/>
+    <div class="mt-10 mx-6 flex justify-between bg-white rounded-lg">
+      <p class=" px-2 py-4 text-gray-500 font-medium">Search location</p>
+
+      <loupe class="bg-indigo-500 m-2 p-3"/>
     </div>
+
+
+
 
     <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(343px,1fr))]">
 
@@ -74,6 +88,7 @@ export default {
         :price="3100" 
         nbrSDB="2"/>
 
+    </div>
     </div>
     <footer1 />
 
