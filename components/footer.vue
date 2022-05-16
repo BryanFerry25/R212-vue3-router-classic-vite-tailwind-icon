@@ -1,10 +1,20 @@
+<script>
+import Logo from './icones/Logo.vue'
+
+export default {
+    components:{ Logo },
+}
+</script>
+
+
 <template>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@3.0.6/css/line.css">
+
+
 <footer class="bg-white pt-10 sm:mt-10">
-    <div class="flex ml-6">
-      <logoheader /><p class="text-xl font-bold text-left text-gray-900 mt-1">Estatery</p>
-    </div>
     <div>
-        <logo class=" mt-12 ml-6"></logo>
+        <Logo class=" mt-12 ml-6"></Logo>
     </div>
         <div class="max-w-6xl m-auto text-gray-900 flex flex-wrap justify-left">
 
@@ -120,40 +130,29 @@
             
         </div>
 
-        <div class="pt-2">
+
+    <div class="pt-2">
         <div class="flex pb-5 px-3 m-auto pt-5 
             border-t border-indigo-100 text-gray-900 text-sm 
             flex-col md:flex-row max-w-6xl">
             <div class="mt-2 text-center">
                 ©2021 Estatery. All rights reserved
             </div>
-            <div class="mt-6 mx-20 flex-row flex justify-between">
+            <div class="mt-6 flex-row flex justify-center">
                 <a href="#" class="w-6 mx-1">
-                    <facebook />
+                    <i class="uil uil-facebook-f"></i>
                 </a>
                 <a href="#" class="w-6 mx-1">
-                    <instagram />
+                    <i class="uil uil-twitter-alt"></i>
                 </a>
                 <a href="#" class="w-6 mx-1">
-                    <twitter />
+                    <i class="uil uil-linkedin"></i>
                 </a>
                 <a href="#" class="w-6 mx-1">
-                    <linkedin />
+                    <i class="uil uil-instagram"></i>
                 </a>
             </div>
         </div>
     </div>
-    </footer>
+</footer>
 </template>
-
-<script>
-import Facebook from "./icones/Facebook.vue"
-import Instagram from "./icones/Instagram.vue"
-import Twitter from "./icones/Twitter.vue"
-import Linkedin from "./icones/linkedin.vue"
-import logoheader from "./icones/logo_header.vue"
-export default {
-  components: { Facebook, Instagram, Twitter, Linkedin, logoheader },
-
-        }
-</script>
