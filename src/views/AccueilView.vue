@@ -2,9 +2,11 @@
 import card from "../components/Card.vue"
 import header1 from "../components/Header.vue"
 import footer1 from "../components/Footer.vue"
+import flechebas from "../components/icones/Flechebas.vue"
+
 export default {
     name:"App",
-    components: { card, header1, footer1 },
+    components: { card, header1, footer1, flechebas },
 }
 </script>
 
@@ -13,6 +15,14 @@ export default {
     <div class="text-center mt-14">
         <h1 class="text-4xl leading-10 font-bold">Search properties to rent</h1>
     </div>
+
+    <div class="flex text-center">
+      <p class="space-x-24 text-center">
+        Search with Search Bar
+      </p>
+      <flechebas/>
+    </div>
+
     <div class="grid grid-flow-row-dense grid-cols-[repeat(auto-fit,minmax(343px,1fr))]">
 
         <card class="p-4" 
