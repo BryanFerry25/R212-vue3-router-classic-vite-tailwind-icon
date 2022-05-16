@@ -24,7 +24,7 @@ export default {
       <div class="mt-14 mx-6 px-2 py-1 border-2 border-indigo-100 rounded-lg flex justify-between bg-white lg:flex-1 py-1 ml-32">
           <p class="text-gray-900 font-medium text-left lg:">Search with Search Bar</p>
 
-          <flechedown class="p-1 my-1 bg-indigo-100 rounded-xl lg:p-2 "/>
+          <flechedown class="p-1 my-1 bg-indigo-100 rounded-xl lg:p-2  "/>
       </div>
     </div>
 
